@@ -19,6 +19,7 @@ node ('master') {
             {
 //                 pybuild()  
                 echo "python"
+                pybuild()
             }
         else if ("${params.Language_Name}" == 'node')
             {
@@ -39,6 +40,15 @@ def checkout()
     stage ("checkout")
     {
         checkout scm 
+    }
+ }
+
+
+def pybuild()
+{
+    stage ("pybuild")
+    {
+        python3 apppy.py
     }
  }
  
