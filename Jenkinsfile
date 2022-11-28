@@ -12,17 +12,17 @@ node ('master') {
         
         if ("${params.Language_Name}" == 'springboot')
             {
-                JavaBuild()
+//                 JavaBuild()
                 echo "Springboot Language"
             }
         else if ("${params.Language_Name}" == 'python')
             {
-                pybuild()  
+//                 pybuild()  
                 echo "python"
             }
         else if ("${params.Language_Name}" == 'node')
             {
-                nodebuild()
+//                 nodebuild()
             }
         else
             {
