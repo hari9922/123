@@ -49,7 +49,8 @@ def pybuild()
 {
     stage ("pybuild")
     {
-        sh "python3 apppy.py"
+//         sh "python3 apppy.py"
+        echo "pybuild"
     }
  }
 
