@@ -6,7 +6,7 @@ api = Api(app)
 
 class apitest(Resource):
   def get(self):
-    return "application deployed"
+    return "application deployed after code"
 
 api.add_resource(apitest, '/apitest')
 
