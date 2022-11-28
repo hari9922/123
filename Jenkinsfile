@@ -3,7 +3,7 @@ import groovy.transform.Field
 import groovy.json.JsonSlurper
 
 
-node ('Built-In Node') {
+node ('Built-In') {
 
     if ("${params.Branch_Name}" == 'main')
     {
