@@ -4,7 +4,7 @@ app = Flask(__name__)
 api = Api(app)
 
 
-class apitets(Resource):
+class apitest(Resource):
   def get(self):
     return "application deployed"
   
