@@ -58,7 +58,7 @@ def dockerbuild()
 {
     stage ("dockerbuild")
     {  
-        sh "docker rm -f haridemo"
+        sh "docker ps"
         sh "docker build -t pyimage:pyimage ."        
         sh "docker run -it -d --name haridemo -p 8081:8089 pyimage:pyimage"
     }
